@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:StringFormat"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:Employee x:Key = "Employee" Name = "Петя" Age = "30" Salary = "25000" />
+    </Window.Resources>
     <Grid>
-        
+        <TextBlock Text = "{Binding StringFormat=Зарплата составляет {0} рублей,
+Source={StaticResource Employee}, Path=Salary}" />
     </Grid>
 </Window>

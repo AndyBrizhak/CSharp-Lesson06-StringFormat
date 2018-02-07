@@ -25,4 +25,11 @@ namespace StringFormat
             InitializeComponent();
         }
     }
+
+    public class Employee
+    {
+        public string Name { get; set; }
+        public string Age { get; set; }
+        public int Salary { get; set; }
+    }
 }
